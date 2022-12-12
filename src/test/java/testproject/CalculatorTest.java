@@ -10,10 +10,7 @@ public class CalculatorTest {
         assertThat(Calculator.sum(2, 2)).isEqualTo(4);
     }
 
-    @Test
-    public void testSum2() {
-        assertThat(Calculator.sum(0, 50)).isEqualTo(50);
-    }
+
 
     @Test
     public void testSubtract() {

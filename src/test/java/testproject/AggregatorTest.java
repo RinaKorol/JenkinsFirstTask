@@ -20,6 +20,14 @@ public class AggregatorTest {
     }
 
     @Test
+    public void testReset() {
+        Aggregator agr = new Aggregator();
+        double val = 20;
+        agr.reset();
+        assertThat(agr.getSum()).isEqualTo(0);
+    }
+
+    @Test
     public void testMultipleAdditions() {
         Aggregator agr = new Aggregator();
         double val = 15;
